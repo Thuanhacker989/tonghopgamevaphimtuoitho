@@ -12,9 +12,10 @@
         
         .card { background: transparent; border-radius: 12px; padding: 15px; margin-bottom: 20px; border: 2px solid rgba(255,255,255,0.5); }
         h2 { font-size: 1.1em; font-weight: 900; margin: 0; text-transform: uppercase; text-shadow: 2px 2px 2px #000; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 8px; }
+        h3 { font-size: 0.9em; color: #fb7185; margin: 15px 0 10px 0; text-transform: uppercase; text-shadow: 1px 1px 2px #000; }
         .jp { font-size: 0.7em; color: #ddd; display: block; font-weight: bold; margin-top: 2px; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 10px; }
         .btn { text-align: center; padding: 10px 5px; border-radius: 8px; text-decoration: none; color: #fff; font-weight: 900; font-size: 0.75em; display: flex; align-items: center; justify-content: center; min-height: 40px; text-shadow: 1px 1px 2px #000; border: 1px solid rgba(255,255,255,0.2); transition: 0.3s; }
         .btn:hover { filter: brightness(1.3); transform: translateY(-2px); border-color: #fff; }
         
@@ -23,6 +24,7 @@
         .b-rom { background: rgba(21, 128, 61, 0.7); } 
         .b-cfw { background: rgba(146, 64, 14, 0.7); }
         .b-pc { background: rgba(71, 85, 105, 0.7); }
+        .b-ani { background: rgba(168, 85, 247, 0.7); }
 
         .counter-box { text-align: center; margin-bottom: 15px; background: rgba(0,0,0,0.4); padding: 8px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); }
         .counter-box img { height: 35px; vertical-align: middle; }
@@ -41,7 +43,7 @@
     </div>
 
     <div class="card">
-        <h2 style="color: #60a5fa;">🟦 SONY PLAYSTATION <span class="jp">ソニー・プレイステーション (PS1, PS2, PS3, PS4, PS5, PSP, PSV)</span></h2>
+        <h2 style="color: #60a5fa;">🟦 SONY PLAYSTATION <span class="jp">ソニー・プレイステーション (PS1-PS5, PSP, PSV)</span></h2>
         <div class="grid">
             <a href="https://github.com/RPCSX/rpcsx-ui-android/releases/download/v20250425/rpcsx-release.apk" class="btn b-sony" target="_blank">PS3 Emulator (Android)</a>
             <a href="https://github.com/Trixarian/NetherSX2-classic/releases/download/2.2n/NetherSX2-v2.2n-3668.apk" class="btn b-sony" target="_blank">NetherSX2 (PS2)</a>
@@ -53,7 +55,6 @@
             <a href="https://github.com/Vita3K/Vita3K/releases/download/continuous/android-latest.apk" class="btn b-sony" target="_blank">Vita3K (Android)</a>
             <a href="https://www.emu-land.net/en/consoles/psx/bios" class="btn b-rom" target="_blank">BIOS PS1</a>
             <a href="https://file.ps2biosonline.com/ps2-bios-all-bios.zip" class="btn b-rom" target="_blank">BIOS PS2</a>
-            <a href="http://dus01.psv.update.playstation.net/update/psv/image/2022_0209/rel_f2c7b12fe85496ec88a0391b514d6e3b/PSVUPDAT.PUP" class="btn b-rom" target="_blank">Firmware PS Vita</a>
             <a href="https://dlpsgame.com/category/ps5/" class="btn b-rom" target="_blank">ROM PS5</a>
             <a href="https://romsfun.com/roms/playstation-4/" class="btn b-rom" target="_blank">ROM PS4</a>
             <a href="https://romsfun.com/roms/ps3/" class="btn b-rom" target="_blank">ROM PS3</a>
@@ -64,17 +65,29 @@
     </div>
 
     <div class="card">
-        <h2 style="color: #f87171;">🟥 NINTENDO SYSTEMS <span class="jp">任天堂エミュレータ (3DS, DS, GC, SW)</span></h2>
+        <h2 style="color: #f87171;">🟥 NINTENDO SYSTEMS <span class="jp">任天堂エミュレータ (3DS, DS, Wii U, Switch...)</span></h2>
+        
+        <h3>📂 Nintendo CFW</h3>
         <div class="grid">
-            <a href="https://romsfun.com/roms/super-nintendo/" class="btn b-rom" target="_blank">SNES rom</a>
-            <a href="https://romsfun.com/roms/nes/" class="btn b-rom" target="_blank">NES rom</a>
+            <a href="https://github.com/Thuanhacker989/tonghopgamevaphimtuoitho/releases/tag/Nintendo" class="btn b-cfw" target="_blank">CFW Nintendo 22.1.0</a>
+            <a href="https://github.com/Thuanhacker989/tonghopgamevaphimtuoitho/releases/tag/3DS" class="btn b-cfw" target="_blank">3DS 11.17.0-50</a>
+        </div>
+
+        <h3>🎮 ROMs & Emulators</h3>
+        <div class="grid">
+            <a href="https://romsfun.com/roms/nintendo-3ds/" class="btn b-rom" target="_blank">ROM 3DS</a>
+            <a href="https://romsfun.com/roms/nintendo-ds/" class="btn b-rom" target="_blank">ROM NDS</a>
+            <a href="https://romsfun.com/roms/game-boy-advance/" class="btn b-rom" target="_blank">ROM GBA</a>
+            <a href="https://nswpedia.com/nintendo-switch-roms/page/4" class="btn b-rom" target="_blank">ROM Switch</a>
+            <a href="https://romsfun.com/roms/gamecube/" class="btn b-rom" target="_blank">ROM GameCube</a>
+            <a href="https://romsfun.com/roms/nintendo-wii/" class="btn b-rom" target="_blank">ROM Wii</a>
+            <a href="https://romsfun.com/roms/wii-u/" class="btn b-rom" target="_blank">ROM Wii U</a>
+            <a href="https://romsfun.com/roms/nintendo-64/" class="btn b-rom" target="_blank">ROM N64</a>
+            <a href="https://romsfun.com/roms/super-nintendo/" class="btn b-rom" target="_blank">ROM SNES</a>
+            <a href="https://romsfun.com/roms/nes/" class="btn b-rom" target="_blank">ROM NES</a>
             <a href="https://github.com/weihuoya/citra/releases/download/20251112/Citra_MMJ_20251112.apk" class="btn b-nin" target="_blank">Citra MMJ (3DS)</a>
             <a href="https://github.com/R-YaTian/DraStic_rev_i18n/releases/download/rev251204/DraStic_r2.6.0.4a_build109_universal_rev251204.apk" class="btn b-nin" target="_blank">DraStic (DS)</a>
-            <a href="https://dl.dolphin-emu.org/releases/2603a/dolphin-2603a.apk" class="btn b-nin" target="_blank">Dolphin (GC)</a>
-            <a href="https://romsfun.com/roms/nintendo-3ds/" class="btn b-rom" target="_blank">ROM 3DS</a>
-            <a href="https://romsfun.com/roms/gamecube/" class="btn b-rom" target="_blank">ROM GameCube</a>
-            <a href="https://nswpedia.com/nintendo-switch-roms/page/4" class="btn b-rom" target="_blank">ROM Switch</a>
-            <a href="https://romsfun.com/roms/game-boy-advance/" class="btn b-rom" target="_blank">ROM GBA</a>
+            <a href="https://dl.dolphin-emu.org/releases/2603a/dolphin-2603a.apk" class="btn b-nin" target="_blank">Dolphin (GC/Wii)</a>
         </div>
     </div>
 
@@ -102,6 +115,15 @@
             <a href="http://prdownloads.sourceforge.net/nestopia/Nestopia140bin.zip?download" class="btn b-pc" target="_blank">Nestopia (PC)</a>
             <a href="https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip" class="btn b-pc" target="_blank">Vita3K (Windows)</a>
             <a href="https://buildbot.libretro.com/stable/1.22.2/windows/x86_64/RetroArch-Win64-setup.exe" class="btn b-pc" target="_blank">RetroArch (PC)</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #a855f7;">🌸 ANIME WORLD <span class="jp">アニメ世界 (Watch & Download)</span></h2>
+        <div class="grid">
+            <a href="https://animevietsub.moe/" class="btn b-ani" target="_blank">AnimeVietsub</a>
+            <a href="https://vuighe.net/" class="btn b-ani" target="_blank">VuiGhe</a>
+            <a href="https://nyaa.si/" class="btn b-ani" target="_blank">Nyaa.si (Raw/Edit)</a>
         </div>
     </div>
 
